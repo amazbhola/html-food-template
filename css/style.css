@@ -68,7 +68,7 @@ h6 {
     background-repeat: no-repeat;
 }
 
-.menu {}
+
 
 .menu ul {
     display: flex;
@@ -140,6 +140,7 @@ h6 {
 .trending {
     grid-column: span 12;
     font-family: inter;
+    padding: 80px 0px;
 
 }
 
@@ -154,7 +155,7 @@ h6 {
 }
 
 .trending-item>div {
-    flex: 1;
+    flex-basis: 40%;
 }
 
 .left-content {
@@ -195,7 +196,7 @@ select {
     font-size: 1em;
 }
 
-.addtocart {
+.add-to-cart {
     display: flex;
     gap: 2em;
     justify-content: space-around;
@@ -328,6 +329,10 @@ button.play i {
 /* Popular Items div css start =================================================== */
 .popular-item {
     grid-column: span 12;
+    font-family: inter;
+}
+.popular-item>h2 {
+   font-size: 44px;
 }
 
 .card-items {
