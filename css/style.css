@@ -1,0 +1,648 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4ECE1;
+}
+
+input,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-left: 87px;
+    padding-top: 39px;
+    gap: 1em;
+}
+
+/* header div css start ======================================================= */
+.header {
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header>div {
+    flex: 1;
+}
+
+/* logo design with ::before attribute */
+.logo {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: "";
+    background-image: url("../images/images.png");
+    background-size: 36px 34px;
+    display: inline-block;
+    width: 36px;
+    height: 34px;
+    background-repeat: no-repeat;
+}
+
+.menu {}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #757575;
+    position: relative;
+    /* justify-content: space-around; */
+   
+
+    
+}
+
+.search> i {
+    position: absolute;
+    z-index: 10;
+}
+.fa-magnifying-glass{
+    left:10px
+}
+.fa-cart-shopping {
+    left:250px;
+}
+
+.search> input {
+    padding: 15px 50px;
+    width: 314px;
+    height: 60px;
+    font-size: 22px;
+    border-radius: 30px;
+    background-color: #F5EDE3;
+    box-shadow: 1px 1px 8px -7px;
+    border: 1px solid #f5ede3;
+    position: relative;
+
+}
+.search>span {
+    position: absolute;
+    left: 269px;
+    bottom: 38px;
+    color: #fff;
+    z-index: 112;
+    font-size: 0.5em;
+    width: 12px;
+    height: 12px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    text-shadow: 1px 1px 10px red;
+    box-shadow: 0px 2px 9px 5px red;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    padding: 30px 20px;
+    color: black;
+}
+
+/* header div css end ======================================================= */
+
+/* Trending items div css start ======================================================= */
+
+.trending {
+    grid-column: span 12;
+    font-family: inter;
+
+}
+
+.trending h2 {
+    font-size: 2.8em;
+}
+
+.trending-item {
+    display: flex;
+    gap: 4em;
+
+}
+
+.trending-item>div {
+    flex: 1;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4em;
+}
+
+.right-content div h4 {
+    font-size: 2em;
+    margin-bottom: 1.8em;
+}
+
+.right-content div h5 {
+    font-size: 1.5em;
+    color: #FEBB41;
+}
+
+.right-content div i {
+    font-size: 2em;
+}
+
+.quantity {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+select {
+    padding: 8px;
+    font-size: 1em;
+}
+
+.addtocart {
+    display: flex;
+    gap: 2em;
+    justify-content: space-around;
+    border: 1px solid #000;
+    padding: 5px;
+    color: #FEBB41;
+}
+
+
+.left-content>div {
+    flex: 1;
+}
+
+.trending-item>.left-content>.top-image img {
+    width: 100%;
+    box-shadow: 0px 0px 1px 0px;
+    border-radius: 5px;
+}
+
+.trending-item>.left-content>.other-image {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.trending-item>.left-content>.other-image img {
+    width: 10%;
+
+}
+
+
+/* Trending items div css End ======================================================= */
+
+/* Slider div css Start ======================================================= */
+.slider {
+    grid-column: span 12;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    font-family: poppins;
+}
+
+.slider>div {
+    flex: 1;
+    max-width: 650px;
+}
+
+.left-slider-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.left-slider-content>div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.left-slider-content h1 {
+    font-size: 125px;
+    font-weight: 700;
+    color: #FF7E00;
+    padding-right: 17px;
+}
+
+.left-slider-content>div h3 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #2F2F2F;
+    line-height: 55px;
+    font-style: normal;
+
+}
+
+.left-slider-content>div img {
+    position: absolute;
+    width: 200px;
+    left: 416px;
+    top: -100px;
+}
+
+.right-slider-content img {
+    margin-top: 35px;
+    padding-right: 50px;
+    max-width: 100%;
+}
+
+.order {
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    margin-right: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+button.play {
+    border: none;
+    background: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.play i {
+    background: #FFF8F0;
+    padding: 11px;
+    border-radius: 30px;
+}
+
+.rating-top {
+    color: #FEBB41;
+    font-size: 1.5em;
+}
+
+
+/* Slider div css end ======================================================= */
+
+
+
+/* Popular Items div css start =================================================== */
+.popular-item {
+    grid-column: span 12;
+}
+
+.card-items {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.card-items>.card {
+    box-sizing: border-box;
+    box-shadow: 0px 9px 8px 0px #ddd;
+    border-radius: 5px;
+    padding: 20px 10px;
+    background-color: white;
+    position: relative;
+}
+
+.product-discount {
+    position: absolute;
+    background-image: linear-gradient(to right #FF5F68, #FF947A);
+}
+
+.card-items>.card img {
+    width: 100%;
+    height: 300px;
+
+}
+
+.card>h4 {
+    color: #FEBB41;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.card>h4>del {
+    color: rgb(122, 118, 118);
+    font-weight: 400;
+    font-size: .8em;
+}
+
+.product-discount {
+    position: absolute;
+    background-image: linear-gradient(to right, #FF5F68, #FF947A);
+    padding: 5px 15px;
+    color: white;
+    top: 34px;
+    left: 0;
+    font-weight: 600;
+}
+
+.card h3 {
+    font-family: 'DM Sans';
+    font-size: 1.8em;
+}
+
+.card h {
+    font-family: 'DM Sans';
+    font-size: 1.4em;
+}
+
+.card button {
+    padding: 5px 40px;
+    font-size: x-large;
+    background-color: white;
+    border-radius: 5px;
+    border: 3px solid green;
+    margin: 5px;
+    color: green;
+    cursor: pointer;
+    
+}
+
+span {
+    cursor: pointer;
+}
+
+.number {
+    margin: 0;
+}
+
+.minus,
+.plus {
+    width: 30px;
+    height: 30px;
+    background: #f2f2f2;
+    border-radius: 4px;
+    padding: 0;
+    border: 2px solid green;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.number>input {
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: green;
+    color: white;
+}
+
+/* Popular Items div css end =================================================== */
+
+
+/* Contact Us div css start ======================================================= */
+.contact-us {
+    grid-column: span 12;
+    font-family: inter;
+    padding: 20px;
+}
+
+.contact-us h2 {
+    font-size: 44px;
+    font-weight: 700;
+    padding: 40px 0px;
+}
+
+.contact-us>p {
+    width: 500px;
+    padding: 20px 0px;
+}
+
+.contact-aria {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.contact-aria>div {
+    flex: 1;
+    min-width: 650px;
+}
+
+
+.contact-form>form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    flex-flow: wrap;
+}
+
+.contact-form>form>input {
+    flex-basis: 80%;
+    display: block;
+    background-color: #F5EDE3;
+    border-bottom: 1px solid #92918f;
+    font-size: 1.2em;
+}
+
+.contact-form>form>button {
+    flex-basis: 80%;
+    background-color: #008F17;
+    border-bottom: 1px solid #92918f;
+    padding: 20px 40px;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+
+.contact-form input:nth-child(3) {
+    flex-basis: 40%;
+}
+
+.contact-form input:nth-child(4) {
+    flex-basis: 33%;
+}
+
+.location-map>* {
+    padding-bottom: 1.5em;
+    line-height: 2em;
+}
+.location-map>h5 {
+   font-weight: 700;
+}
+
+/* Contact Us div css end ======================================================= */
+
+/* Footer div css start ======================================================= */
+.footer {
+    padding: 63px 194px;
+    background-color: #1E2833;
+    color: white;
+    height: auto;
+
+}
+
+.footer>i {
+    font-size: 50px;
+    padding-bottom: 48px;
+
+}
+
+.footer hr {
+    height: 0;
+    border: 0;
+    border-top: 1px solid #303942;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    font-family: DM Sans;
+    font-size: 22px;
+    flex-wrap: wrap;
+    padding-top: 42px;
+}
+
+.footer-content>div {
+    flex: 1;
+}
+
+.footer-content>div>input {
+    padding: 10px 0px;
+
+    border: 1px solid #1E2833;
+    background-color: #1E2833;
+    border-bottom: 1px solid #303942;
+}
+
+.footer-content>div>button {
+    padding: 10px 20px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #FFD2DD;
+}
+
+.footer-content>div>button>i {
+    font-size: large;
+}
+
+.footer-content>div>ul {
+    list-style: none;
+    margin: 0;
+}
+
+.footer-content>div>ul>li {
+    padding: 0px 0px 10px 0px;
+}
+
+.footer-content>div>ul>li:nth-child(1)>a {
+    color: #FFD2DD;
+    font-size: 17px;
+}
+
+.footer-content>div>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+}
+
+.footer-end a {
+    font-size: 15px;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-end i {
+    font-size: 23px;
+}
+
+.footer-end>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Footer div css end ======================================================= */
+
+/* Mobile Responsive Css =========== */
+@media screen and (max-width:750px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        padding-top: 39px;
+        padding-left: 30px;
+    }
+
+    .right-slider-content img {
+        max-width: 125%;
+    }
+
+    .right-slider-content img {
+        max-width: 100%;
+        margin-top: 35px;
+    }
+
+    .trending-item {
+        flex-flow: column;
+    }
+
+    .contact-form>form {
+        flex-flow: column;
+    }
+
+    .location-map>iframe {
+        width: 450px;
+        height: 450px;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+}
