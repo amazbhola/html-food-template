@@ -145,7 +145,7 @@ h6 {
 }
 
 .trending h2 {
-    font-size: 2.8em;
+    font-size: 3.5vw;
 }
 
 .trending-item {
@@ -173,7 +173,7 @@ h6 {
 }
 
 .right-content div h4 {
-    font-size: 2em;
+    font-size: 3vw;
     margin-bottom: 1.8em;
 }
 
@@ -265,7 +265,7 @@ select {
 }
 
 .left-slider-content h1 {
-    font-size: 125px;
+    font-size: 9.3vw;
     font-weight: 700;
     color: #FF7E00;
     padding-right: 17px;
@@ -282,9 +282,10 @@ select {
 
 .left-slider-content>div img {
     position: absolute;
-    width: 200px;
-    left: 416px;
-    top: -100px;
+    width: 32%;
+    height: auto;
+    left: 80%;
+    top: -36%;
 }
 
 .right-slider-content img {
@@ -332,7 +333,7 @@ button.play i {
     font-family: inter;
 }
 .popular-item>h2 {
-   font-size: 44px;
+   font-size: 3.5vw;
 }
 
 .card-items {
@@ -449,7 +450,7 @@ span {
 }
 
 .contact-us h2 {
-    font-size: 44px;
+    font-size: 3.5vw;
     font-weight: 700;
     padding: 40px 0px;
 }
@@ -491,9 +492,9 @@ span {
     flex-basis: 80%;
     background-color: #008F17;
     border-bottom: 1px solid #92918f;
-    padding: 20px 40px;
+    padding: .9% 3%;
     color: white;
-    font-size: 2em;
+    font-size: 2.5vw;
     font-weight: 700;
 }
 
